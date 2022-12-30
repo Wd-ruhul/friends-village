@@ -6,7 +6,7 @@ const Media = () => {
   const { data: media = []} = useQuery({
     queryKey: ["media"],
     queryFn: async () => {
-      const res = await fetch(`http://localhost:5000/media`);
+      const res = await fetch(`https://friendvillage-server.vercel.app/media`);
       const data = await res.json();
       return data;
     },

@@ -13,7 +13,7 @@ const About = () => {
   const { data: profile = [] } = useQuery({
     queryKey: ["profile"],
     queryFn: async () => {
-      const res = await fetch(`http://localhost:5000/profile`);
+      const res = await fetch(`https://friendvillage-server.vercel.app/profile`);
       const data = await res.json();
       return data;
     },

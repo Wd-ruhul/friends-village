@@ -51,7 +51,7 @@ if(imgData.success){
      post_date: now,
     image:imgData.data.url
   };
-   fetch("http://localhost:5000/addmediapost", {
+   fetch("https://friendvillage-server.vercel.app/addmediapost", {
      method: "POST",
      headers: {
        "content-type": "application/json",
