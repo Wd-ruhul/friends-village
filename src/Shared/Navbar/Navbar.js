@@ -18,11 +18,18 @@ const Navbar = () => {
       <li>
         <Link to="/">Home</Link>
       </li>
+      <li>
+        <Link to="/media">Media</Link>
+      </li>
+      <li>
+        <Link to="/message">Message</Link>
+      </li>
 
       
       <li>
-        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/about">About</Link>
       </li>
+    
 
       {
         user?.uid ? (
@@ -84,7 +91,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link className="btn btn-ghost normal-case text-xl">
-          <span className="text-primary mr-2">RESELLER</span> <p>BD</p>
+          <span className="text-primary mr-2">Friends</span> <p>Village</p>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
